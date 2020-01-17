@@ -25,6 +25,11 @@ export function SearchBar() {
             placeholder="Where..."
           />
         </p>
+        <div className={`button is-medium ${styles["search-button"]}`}>
+          <span className="icon is-small">
+            <i className="fas fa-search"></i>
+          </span>
+        </div>
       </div>
     </div>
   );
