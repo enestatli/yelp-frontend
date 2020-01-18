@@ -15,7 +15,8 @@ export function SearchResult() {
         <h2 className="subtitle">Burger Place</h2>
         <BusinessRating />
         <p>
-          $$ <span class="tag">Burgers</span> <span class="tag">Fast Food</span>
+          $$ <span className="tag">Burgers</span>{" "}
+          <span className="tag">Fast Food</span>
         </p>
       </div>
       <div className={styles["contact-info"]}>
