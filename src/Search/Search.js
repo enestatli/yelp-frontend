@@ -3,6 +3,7 @@ import React from "react";
 import { NavBar } from "../NavBar/NavBar";
 import { SubNav } from "../NavBar/SubNav/SubNav";
 import { SearchResultsSummary } from "./SearchResultsSummary/SearchResultsSummary";
+import { SearchResults } from "./SearchResults/SearchResults";
 
 export function Search() {
   return (
@@ -10,6 +11,7 @@ export function Search() {
       <NavBar />
       <SubNav />
       <SearchResultsSummary />
+      <SearchResults />
     </div>
   );
 }
