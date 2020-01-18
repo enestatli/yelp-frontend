@@ -16,14 +16,24 @@ export function Search() {
     businesses,
     amountResults,
     searchParams,
-    setSearchParams
+    performSearch
   ] = useBusinessSearch(term, locationParam);
+
+  function search(term, location) {
+    console.log("I am called");
+    performSearch({ term, location });
+  }
 
   return (
     <div>
-      <NavBar term={term} location={locationParam} />
+      <NavBar term={term} location={locationParam} search={search} />
       <SubNav />
-      <SearchResultsSummary term={term} location={locationParam} />
+      <SearchResultsSummary
+        term={searchParams.term}
+        location={searchParams.location}
+        amountResults={amountResults}
+        shownResults={businesses ? businesses.length : 0}
+      />
       <SearchResults businesses={businesses} />
     </div>
   );

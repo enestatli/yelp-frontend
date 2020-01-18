@@ -11,7 +11,12 @@ export function NavBar(props) {
       <Link to="/">
         <img src={logo} className={styles.logo} alt="belb logo" />
       </Link>
-      <SearchBar small term={props.term} location={props.location} />
+      <SearchBar
+        small
+        term={props.term}
+        location={props.location}
+        search={props.search}
+      />
       <button className={`button ${styles["nav-button"]}`}>Sign In</button>
       <button className={`button ${styles["nav-button"]}`}>Register</button>
     </div>
