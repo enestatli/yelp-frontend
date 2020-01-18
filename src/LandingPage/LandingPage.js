@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import useReactRouter from "use-react-router";
 
 import styles from "./LandingPage.module.css";
