@@ -9,7 +9,6 @@
     height: 210px;
     border-radius: 4px;
     margin-right: 1rem;
-
 }
 
 .business-info {
@@ -18,4 +17,8 @@
 
 .contact-info p {
     font-size: .85rem;
+}
+
+:global(.tag).business-tag {
+    margin-right: 4px;
 }
